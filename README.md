@@ -32,8 +32,8 @@ All website copy, social links, contact emails, and Formspree IDs are centrally 
 👉 **`src/content/site.ts`**
 
 Update the following constants when ready to publish:
-- `email`: Contact email address
-- `whatsapp`: WhatsApp number with country code (e.g. `1XXXXXXXXXX`)
+- `email`: deadityah@gmail.com
+- `whatsapp`: +91 9893254470
 - `linkedin`: LinkedIn company URL
 - `formspreeId`: Formspree form ID for the contact form
 - `DocuMind link` / `ResearchPilot link`: Demo/project URLs
