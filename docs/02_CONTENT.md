@@ -151,13 +151,22 @@ Three levels climbing upward:
   - `Email us` (opens `mailto:`) with a small `Copy email` action. After copy, show a toast: `Email copied`. Hide if email is `[FILL]`.
   - `Message on WhatsApp` (opens `https://wa.me/<whatsapp>`). Hide if whatsapp is `[FILL]`.
 - Simple form (sends to Formspree, no backend):
-  - Name (required)
-  - Email or phone (required)
+  - Name (required, max 80 characters)
+  - Email (max 120 characters)
+  - Mobile number (country code select + number input)
+  - Helper line: `Fill in at least one. We will reply on whichever you give.`
   - `What do you need?` select: Business dashboard · AI application · Something else
-  - Message (required)
+  - Message (required, 10–2000 characters)
   - Button: `Send message`
   - Success text: `Message sent. We will reply soon.`
   - Error text: `Message not sent. Check your internet and try again, or email us directly.`
+  - Error messages:
+    - Empty email and mobile: `Please give us an email or a mobile number.`
+    - Invalid email: `Enter a valid email address.`
+    - Invalid mobile: `Enter a valid mobile number.`
+    - Link filter: `Please remove some links and try again.`
+    - Cooldown: `Please wait {n} seconds before sending another message.`
+    - Hourly cap: `You have sent several messages already. Please try again later, or message us on Instagram.`
 
 ---
 
